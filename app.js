@@ -14,8 +14,8 @@ app.get ("/" , function (req, res){
         const weatherData = JSON.parse(data)
         const  temp = weatherData.main.temp
         const weatherDescription = weatherData.weather[0].description
-        res.write("<h1>The Temprature in Delhi is "+temp +" degree celcuis</h1>")
-        res.write("<h2>The Temprature description is "+ weatherDescription +"</h2> ")
+        res.write("<h2>The Temprature in Delhi is "+temp +" degree celcuis</h2>")
+        res.write("<h2>The Weather currently is "+ weatherDescription +"</h2> ")
 
         res.send()
     }) 
