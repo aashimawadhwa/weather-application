@@ -12,17 +12,16 @@ app.get ("/" , function (req, res){
        
         response.on("data" , function(data){
         const weatherData = JSON.parse(data)
-        const object={
-            name:"Jaadu",
-            favoriteFood:"baraf"
-        }
-      console.log(  JSON.stringify(object));
-        })
+        const  temp = weatherData.main.temp
+        const weatherDescription = weatherData.weather[0].description
+        console.log(weatherDescription);
 
-    })
+        }) 
     res.send("server is running.")
-})
+     })
+  })
 
 app.listen(3000, function(){
     console.log("heyy nummu")
 })
+    
