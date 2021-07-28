@@ -2,6 +2,6 @@
 # weather-application
 
 
-first project using API
+First project using API
 
 
